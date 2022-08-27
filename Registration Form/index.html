@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registraion Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@450&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="head">
+      <h2>Student Registraion Form</h2>
+    </div>
+    <div class="main">
+      <div class="register">
+        <form id="register" onsubmit="return false">
+          <label for="">Name :</label>
+          <br />
+          <input
+            autocomplete="off"
+            type="text"
+            name="fname"
+            id="name"
+            placeholder="Enter your name"
+          />
+          <br /><br />
+          <label for="">Age :</label>
+          <br />
+          <input
+            autocomplete="off"
+            type="text"
+            id="age"
+            placeholder="Enter your age"
+          />
+          <br /><br />
+          <label for="">Email :</label>
+          <br />
+          <input
+            autocomplete="off"
+            type="email"
+            name="Email"
+            id="email"
+            placeholder="Enter your email here"
+          />
+          <br /><br />
+          <label for="">Image Url :</label>
+          <br />
+          <input
+            autocomplete="off"
+            type="url"
+            name="image"
+            id="url"
+            placeholder="Enter image url"
+          />
+          <br /><br />
+          <label for="">Gender :</label>
+          <br />
+          &nbsp;&nbsp;&nbsp;
+          <input type="radio" name="gender" value="Male" />
+          &nbsp;
+          <span id="male">Male</span>
+          &nbsp;&nbsp;&nbsp;
+          <input type="radio" name="gender" value="Female" />
+          &nbsp;
+          <span id="female">Female</span>
+          <br /><br />
+          <label for="">Skills :</label>
+          <br />
+          &nbsp;&nbsp;&nbsp;
+          <input type="checkbox" value="HTML" name="skill" />
+          <span id="HTML">HTML</span>
+          &nbsp;
+          <input type="checkbox" value="CSS" name="skill" />
+          <span id="CSS">CSS</span>
+          &nbsp;
+          <input type="checkbox" value="JS" name="skill" />
+          <span id="JS">JS</span>
+          <br /><br />
+          <button
+            type="submit"
+            type="submit"
+            id="enroll"
+            class="button-33"
+            role="button"
+          >
+            Enroll Now
+          </button>
+        </form>
+      </div>
+    </div>
+    <h2>
+      ----------------------------------------------Enrolled Students---------------------------------------------
+    </h2>
+    <div class="card"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
